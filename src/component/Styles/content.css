@@ -1,7 +1,7 @@
 
 .content-wrapper{
     height: 100vh;
-    padding: 0 200px;
+    padding: 0 150px;
 }
 .content-wrapper h1{
     display: flex;
@@ -13,13 +13,91 @@
 
 .content{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .content-heading{
     padding-top: 3rem;
 }
 .right-content{
     display: flex;
-    min-width: 50%;
-    background-color: #f6f3ee;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(241, 229, 217);
+    color: black;
+}
+.left-content{
+    margin-right: 50px;
+    padding: 30px;
+}
+.left-content h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.left-content p{
+    font-weight: bold;
+    width: 400px;
+    font-size: 16px;
+}
+.right-content-right,
+.right-content-left{
+    padding: 50px;
+}
+.right-content-right h2{
+    margin-bottom: 30px;
+    color: rgb(255, 196, 120);
+}
+.right-content-left h2{
+    color: rgb(255, 196, 120);
+    margin-bottom: 20px;
+}
+.register__btn{
+    border: 1px solid rgb(255, 196, 120);
+    padding: 8px 20px;
+    color: rgb(255, 196, 120);
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.register__btn:hover{
+    background: rgb(255, 196, 120);
+    color: black;
+}
+
+.login__input{
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    outline: none;
+    border: 1px solid rgb(255, 196, 120);
+    font-size: 18px;
+    border-radius: 3px;
+}
+.login__btn{
+    border: 1px solid rgb(255, 196, 120);
+    padding: 8px 20px;
+    color: rgb(255, 196, 120);
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.login__btn:hover{
+    background: rgb(255, 196, 120);
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .content-wrapper{
+        padding: 20px;
+    }
+    .content-wrapper h1{
+       font-size: 30px;
+    }
+    .content{
+        flex-direction: column;
+    }
 }

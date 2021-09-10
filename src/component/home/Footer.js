@@ -3,10 +3,11 @@ import '../Styles/footer.css'
 const Footer = () => {
     return (
         <footer className="footer-wrapper">
-            <div>
-                <img src="images/129.png"/>
-                <strong>נהלים וטפסים</strong>
-                <a href=""><p>
+            <div className="footer__card">
+                <img src="images/129.png" alt=""/><br/>
+                <p className="card__head">נהלים וטפסים</p>
+                <a className="card__link" href="#">
+                    <p>
                     נוהל הגשת בקשה לפטור
                     טופס בקשה לפטור מיגון - כללי
                     טופס בקשה לפטור לשימוש חורג - גן ילדים
@@ -15,10 +16,10 @@ const Footer = () => {
                 </p></a>
 
             </div>
-            <div>
-                <img src="images/127.png"/><br/>
-                <strong>נהלים וטפסים</strong>
-                <a href=""><p>
+            <div className="footer__card">
+                <img src="images/127.png" alt=""/><br/>
+                <p className="card__head">נהלים וטפסים</p>
+                <a className="card__link" href=""><p>
                     נוהל הגשת בקשה לפטור
                     טופס בקשה לפטור מיגון - כללי
                     טופס בקשה לפטור לשימוש חורג - גן ילדים
@@ -27,10 +28,10 @@ const Footer = () => {
                 </p></a>
 
             </div>
-            <div>
-                <img src="images/165.png"/><br/>
-                <strong>נהלים וטפסים</strong>
-                <a href=""><p>
+            <div className="footer__card">
+                <img src="images/165.png" alt=""/><br/>
+                <p className="card__head">נהלים וטפסים</p>
+                <a className="card__link" href=""><p>
                     נוהל הגשת בקשה לפטור
                     טופס בקשה לפטור מיגון - כללי
                     טופס בקשה לפטור לשימוש חורג - גן ילדים
@@ -39,10 +40,10 @@ const Footer = () => {
                 </p></a>
 
             </div>
-            <div>
-                <img src="images/166.png" /><br/>
-                <strong>נהלים וטפסים</strong>
-                <a href=""><p>
+            <div className="footer__card">
+                <img src="images/166.png" alt=""/><br/>
+                <p className="card__head">נהלים וטפסים</p>
+                <a className="card__link" href=""><p>
                     נוהל הגשת בקשה לפטור
                     טופס בקשה לפטור מיגון - כללי
                     טופס בקשה לפטור לשימוש חורג - גן ילדים

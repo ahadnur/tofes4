@@ -1,8 +1,33 @@
 .footer-wrapper{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px;
+    flex-direction: row-reverse;
 }
-
-.footer-wrapper div{
-    width: 25%;
-  
+.footer__card{
+    padding: 40px;
+}
+.footer__card img{
+    margin-bottom: 30px;
+}
+.card__head{
+    margin-bottom: 20px;
+    color: rgb(255, 196, 120);
+    font-weight: bold;
+}
+.card__link{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:768px) {
+    .footer-wrapper{
+        padding: 40px;
+        flex-direction: column-reverse;
+    }
+    .footer__card{
+        padding: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
