@@ -3,12 +3,12 @@ import '../Styles/nav.css'
 const Navbar = () => {
     return (
         <nav className="navigation">
-            <ul>
-                <li><a href="#">מערכת פיקוד העורף לאישור בקשות להיתרי בנייה</a></li>
-                <div className="separator"></div>
+            <img src="images/logo.png" alt="avatarImg" />
+            <ul className="navigation__links">
                 <li><a href="#">פיקוד העורף</a></li>
+                <div className="separator"></div>
+                <li><a href="#">מערכת פיקוד העורף לאישור בקשות להיתרי בנייה</a></li>
             </ul>
-            <img src="images/logo.png"></img>
         </nav>
     )
 }

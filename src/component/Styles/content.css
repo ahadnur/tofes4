@@ -1,18 +1,22 @@
 
 .content-wrapper{
     height: 100vh;
+    padding: 0 200px;
 }
 .content-wrapper h1{
     display: flex;
     justify-content: center;
     font-weight: 700;
     color: white;
-    font-size: 45px;
+    font-size: 60px;
 }
 
 .content{
     display: flex;
     justify-content: center
+}
+.content-heading{
+    padding-top: 3rem;
 }
 .right-content{
     display: flex;

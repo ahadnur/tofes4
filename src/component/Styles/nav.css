@@ -1,17 +1,18 @@
-
-
 .navigation{
   display: flex;
   justify-content: right;
-  padding: 10px;
+  align-items: center;
+  padding: 10px 200px;
 }
 .navigation img{
-    min-height: 50px;
-    min-width: 50px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
 }
 
-.navigation ul{
+.navigation__links{
     display: flex;
+    align-items: center;
 }
 .navigation ul li{
     list-style-type: none;
@@ -19,4 +20,23 @@
 }
 .navigation ul li a{
     text-decoration:none ;
+    color: black;
+    font-size: 16px;
+}
+
+.separator{
+    height: 20px;
+    width: 2px;
+    background: black;
+}
+
+@media screen and (max-width:768px) {
+    .navigation{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navigation__links{
+        flex-direction: column;
+        align-items: right;
+    }
 }
