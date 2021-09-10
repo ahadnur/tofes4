@@ -1,0 +1,8 @@
+.footer-wrapper{
+    display: flex;
+}
+
+.footer-wrapper div{
+    width: 25%;
+  
+}

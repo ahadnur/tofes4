@@ -1,0 +1,21 @@
+
+.content-wrapper{
+    height: 100vh;
+}
+.content-wrapper h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    font-size: 45px;
+}
+
+.content{
+    display: flex;
+    justify-content: center
+}
+.right-content{
+    display: flex;
+    min-width: 50%;
+    background-color: #f6f3ee;
+}

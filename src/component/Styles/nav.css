@@ -1,0 +1,22 @@
+
+
+.navigation{
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+}
+.navigation img{
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.navigation ul{
+    display: flex;
+}
+.navigation ul li{
+    list-style-type: none;
+    padding: 20px;
+}
+.navigation ul li a{
+    text-decoration:none ;
+}
