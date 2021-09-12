@@ -1,7 +1,5 @@
 import './App.css';
-import { Content } from './component/home/Content';
-import Footer from './component/home/Footer';
-import Navbar from './component/home/Nav';
+import Navbar from './component/common/Nav';
 import {
   BrowserRouter as Router,
   Switch,
