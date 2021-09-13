@@ -1,4 +1,4 @@
-import '../Styles/content.css'
+import '../Styles/home/content.css'
 
 
 export const Content = () => {

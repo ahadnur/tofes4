@@ -1,0 +1,63 @@
+.dash__content__wrapper{
+    
+    min-height: 320px;
+    border-bottom:2px solid turquoise;
+
+}
+
+.dash__content{
+    min-height: 300px;
+}
+.dash__content ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.dash__content ul li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.dash__content ul li:hover{
+    border-bottom: 2px solid steelblue;
+}
+
+.dash__content ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.Dbutton__part{
+    position: absolute;
+    top:  300px;
+    margin-right: 30px;
+}
+
+.Dbutton__part h3{
+    justify-content: center;
+    text-align: center;
+}
+.Dbutton__part button{
+    padding: 8px;
+    background-color: #ff9b41;
+    border: none;
+}
+
+.dash__filter h5{
+    text-align: left;
+}
+.dash_filter__option p{
+    margin-right: 20px;
+}
+.filter__button {
+    display: flex;
+    justify-content: center;
+}
+.filter__button .filter__item{
+    margin: 5px;
+    padding: 8px;
+    min-width: 180px;
+    min-height: 5px;
+}
+
