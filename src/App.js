@@ -13,11 +13,11 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <DashContent />
-      {/* <Switch>
+      {/* <DashContent /> */}
+      <Switch>
        <Route exact path="/"><Home/></Route>
        <Route exact path="/dashboard"><TestDashBoard/></Route>
-     </Switch> */}
+     </Switch>
     </Router>
   );
 }
