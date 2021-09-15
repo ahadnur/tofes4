@@ -7,16 +7,18 @@ import {
 } from "react-router-dom";
 import { Home } from './component/home/Home';
 import { TestDashBoard } from './component/testDashBoard';
-import { DashContent } from './component/Dashboard/dContent';
+import { Register } from './component/Account/Register';
+
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <DashContent /> */}
       <Switch>
        <Route exact path="/"><Home/></Route>
        <Route exact path="/dashboard"><TestDashBoard/></Route>
+       <Route  path="/register"><Register/></Route>
      </Switch>
     </Router>
   );

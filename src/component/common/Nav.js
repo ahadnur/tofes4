@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="navigation">
             <img src="images/logo.png" alt="avatarImg" />
             <ul className="navigation__links">
-                <li><a href="#">פיקוד העורף</a></li>
+                <li><NavLink to="/register">פיקוד העורף</NavLink></li>
                 <div className="separator"></div>
                 <li><NavLink to="/dashboard">מערכת פיקוד העורף לאישור בקשות להיתרי בנייה</NavLink></li>
             </ul>
