@@ -1,11 +1,9 @@
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 import { Home } from './component/home/Home';
-import { TestDashBoard } from './component/testDashBoard';
 import { Register } from './component/Account/Register';
 import { DashContent } from "./component/Dashboard/dContent";
 import { CaseForm } from "./component/CreateCase/caseForm";
