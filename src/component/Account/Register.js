@@ -13,52 +13,41 @@ export const Register = () => {
             <Container maxWidth="sm" className="">
                 <Typography style={{ backgroundColor: '#cfe8fc', padding: 20 }} component="h1" >Login</Typography>
                 <form className="r__form" noValidate autoComplete="off">
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} md={6}>
-                            <label>שם פרטי</label><br />
-                            <input /><br />
-                        </Grid>
+                    {/* <Grid container spacing={2}> */}
+                    <label>שם פרטי</label><br />
+                    <input type="text" /><br />
 
-                        <Grid item xs={12} md={6}>
-                            <label>שם פרטי</label><br />
-                            <input /><br />
-                        </Grid>
+                    <label>שם פרטי</label><br />
+                    <input type="text" /><br />
 
-                        <Grid item xs={12} md={6}>
-                            <label>מספר תעודת זהות</label><br />
-                            <input /><br />
-                        </Grid>
 
-                        <Grid item xs={12} md={6}>
-                            <label>שם פרטי</label><br />
-                            <input /><br />
-                        </Grid>
 
-                        <Grid item xs={12} md={6}>
-                            <label>שם פרטי</label><br />
-                            <input /><br />
-                        </Grid>
-                        <Grid item xs={12} md={6}>
-                            <label>טלפון נייד (מספר זה ישמש לצורך התחברות)</label><br />
-                            <input /><br />
-                        </Grid>
-                        <Grid item xs={12} md={6}>
-                            <label>טלפון נייד נוסף (רשות)</label><br />
-                            <input /><br />
-                        </Grid>
-                        <Grid item xs={12} md={6}>
-                            <label>שם משרד/גוף מתכנן(רשות)י</label><br />
-                            <input /><br />
-                        </Grid>
-                        <Grid  item xs={12} md={12} sm={12}>
-                            <label>דואר אלקטרוני</label><br />
-                            <input /><br />
-                        </Grid>
-                        <Grid style={{  display: 'flex', justifyContent: 'center' }} item xs={12} md={12} sm={12}>
-                            <Button style={{minWidth: 200}}  variant="contained" color="primary" >Login</Button>
-                        </Grid>
+                    <label>מספר תעודת זהות</label><br />
+                    <input type="text" /><br />
 
-                    </Grid>
+                    <label>שם פרטי</label><br />
+                    <input type="text" /><br />
+
+                    <label>שם פרטי</label><br />
+                    <input type="text" /><br />
+
+                    <label>טלפון נייד (מספר זה ישמש לצורך התחברות)</label><br />
+                    <input type="text" /><br />
+
+                    <label>טלפון נייד נוסף (רשות)</label><br />
+                    <input type="text" /><br />
+
+                    <label>שם משרד/גוף מתכנן(רשות)י</label><br />
+                    <input /><br />
+
+                    <label>דואר אלקטרוני</label><br />
+                    <input type="text" /><br />
+
+
+                    <Button style={{ minWidth: 200 }} variant="contained" color="primary" >Login</Button>
+
+
+                    {/* </Grid> */}
                 </form>
             </Container>
 

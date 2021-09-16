@@ -1,5 +1,4 @@
-import './App.css';
-import Navbar from './component/common/Nav';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,17 +7,18 @@ import {
 import { Home } from './component/home/Home';
 import { TestDashBoard } from './component/testDashBoard';
 import { Register } from './component/Account/Register';
+import { DashContent } from "./component/Dashboard/dContent";
+import { CaseForm } from "./component/CreateCase/caseForm";
 
 
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
-      {/* <DashContent /> */}
       <Switch>
        <Route exact path="/"><Home/></Route>
-       <Route exact path="/dashboard"><TestDashBoard/></Route>
-       <Route  path="/register"><Register/></Route>
+       <Route exact path="/dashboard"><DashContent/></Route>
+       <Route exact path="/register"><Register/></Route>
+       <Route exact path="/caseform"><CaseForm/></Route>
      </Switch>
     </Router>
   );
