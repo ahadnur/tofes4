@@ -4,6 +4,7 @@ import { CaseForm1 } from './caseForm1'
 import { CaseForm2 } from './caseForm2'
 import { CaseForm3 } from './caseForm3'
 import '../Styles/createcase/caseform.css'
+import { Banner } from '../common/banner'
 
 
 export const CaseForm = () => {
@@ -41,19 +42,7 @@ export const CaseForm = () => {
     return (
         <Container>
 
-            <div className="cform__content__wrapper" >
-                <div className="cform__content" style={{
-                    backgroundImage: `url('images/oref_hp_bg.png')`,
-                    objectFit: 'contain'
-                }}>
-                    <ul>
-                        <li><a href="">Update personal detail</a></li>
-                        <li><a href="">Opening a new portfolio</a></li>
-                        <li><a href="">My bags</a></li>
-                    </ul>
-                </div>
-
-            </div>
+            <Banner/>
 
             <Container>
                 <Grid container className="" spacing={2}>
