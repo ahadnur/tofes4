@@ -17,7 +17,7 @@ const theme = createTheme();
 export const Register = () => {
     return (
         <ThemeProvider theme={theme}>
-        <Container component="main" maxWidth="xs">
+        <Container style={{border:"1px solid black"}}  component="main" maxWidth="xs">
             <CssBaseline />
             <Box
             sx={{

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/dashboard/dContent.css'
+
 
 export const DashContent = () => {
     return (
@@ -50,6 +50,7 @@ export const DashContent = () => {
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }
