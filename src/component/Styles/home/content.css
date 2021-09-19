@@ -1,6 +1,6 @@
 
 .content-wrapper{
-    height: 100vh;
+    min-height: 60vh;
     padding: 0 150px;
 }
 .content-wrapper h1{
@@ -8,7 +8,7 @@
     justify-content: center;
     font-weight: 700;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 0px;
 }
 
@@ -24,7 +24,7 @@
 .right-content{
     display: flex;
     width: 600px;
-    height: 400px;
+    height: 250px;
     background-color: rgb(241, 229, 217);
     color: black;
 }
@@ -43,24 +43,34 @@
 }
 .right-content-right,
 .right-content-left{
-    padding: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .right-content-right h2{
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin: 0 0 25px 0;
     color: rgb(255, 196, 120);
 }
 .right-content-left h2{
     color: rgb(255, 196, 120);
-    margin-bottom: 20px;
+    margin: 0;
+    font-size: 18px;
+}
+.right-content-left p{
+    font-size: 15px;
+    margin: 0;
 }
 .register__btn{
     border: 1px solid rgb(255, 196, 120);
-    padding: 8px 20px;
+    padding: 5px 20px;
     color: rgb(255, 196, 120);
-    margin-top: 30px;
+    margin: 0;
     cursor: pointer;
     border-radius: 3px;
-    font-size: 18px;
+    font-size: 15px;
+    width: 60%;
 }
 .register__btn:hover{
     background: rgb(255, 196, 120);
@@ -69,26 +79,30 @@
 
 .login__input{
     height: 30px;
-    margin-bottom: 10px;
-    padding: 5px 20px;
+    padding: 2px 20px;
     outline: none;
     border: 1px solid rgb(255, 196, 120);
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 3px;
 }
 .login__btn{
     border: 1px solid rgb(255, 196, 120);
-    padding: 8px 20px;
+    padding: 5px 20px;
     color: rgb(255, 196, 120);
-    margin-top: 30px;
     cursor: pointer;
     border-radius: 3px;
-    font-size: 18px;
+    font-size: 15px;
+    width: 60%;
 }
 
 .login__btn:hover{
     background: rgb(255, 196, 120);
     color: black;
+}
+
+/* From material UI */
+.MuiTypography-gutterBottom {
+    font-size: 20px !important;
 }
 
 @media screen and (max-width: 768px) {
