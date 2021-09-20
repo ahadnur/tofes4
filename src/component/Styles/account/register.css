@@ -1,20 +1,26 @@
-
-.register__wrapper{
-    margin-top: 20px;
+.register__wrapper {
+  margin-top: 20px;
 }
-.r__form{
-    margin-top: 5px;
-}
-
-.r__form input{
-    padding: 10px;
-    padding-left: 30px;
-    margin: 3px;
-    background-color: #f1f1f1;
-    outline: none;
-    border: 1px solid black;
+.r__form {
+  margin-top: 5px;
 }
 
-.r__button{
-   background-color: #ffa030;
+.r__form input {
+  padding: 10px;
+  padding-left: 30px;
+  margin: 3px;
+  background-color: #f1f1f1;
+  outline: none;
+  border: 1px solid black;
+}
+
+.r__button {
+  background-color: #ffa030;
+}
+
+.MuiContainer-root.MuiContainer-maxWidthXs.css-nzinn5-MuiContainer-root {
+  padding: 20px;
+}
+.MuiBox-root.css-binzgt {
+  margin: 0;
 }

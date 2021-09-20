@@ -21,7 +21,6 @@ export const Register = () => {
             <CssBaseline />
             <Box
             sx={{
-                marginTop: 8,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -40,7 +39,6 @@ export const Register = () => {
                   required
                   fullWidth
                   label="First Name"
-                  autoFocus
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
