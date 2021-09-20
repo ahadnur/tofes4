@@ -1,9 +1,12 @@
+import { Container } from '@mui/material'
 import React from 'react'
+import { DCollapes } from './DCollapes'
+import { Footer } from './Footer'
 
 
 export const DashContent = () => {
     return (
-        <>
+        <Container>
             <div className="dash__content__wrapper" >
                 <div className="dash__content" style={{
                     backgroundImage: `url('images/oref_hp_bg.png')`,
@@ -46,11 +49,12 @@ export const DashContent = () => {
                             <option>2</option>
                             <option>3</option>
                         </select>
-                        <input  type="button" className="filter__item" value="Filter" />
+                        <input type="button" className="filter__item" value="Filter" />
                     </div>
                 </div>
             </div>
-            
-        </>
+            <DCollapes />
+            <Footer />
+        </Container>
     )
 }
