@@ -1,0 +1,28 @@
+
+.document_link{
+    display: flex;
+    list-style-type: none;
+}
+
+/* .document_link li{
+    min-width: 150px;
+    padding: 5px;
+} */
+.document_link li{
+    background-color: #eaeaea;
+    text-align: center;
+    color: black;
+    min-width: 150px;
+    padding: 5px;
+
+}
+.document_link li:hover{
+    background-color: #4174b3;
+    color: white;
+}
+.document_link li a{
+    text-decoration: none;
+}
+.MuiCardHeader-title{
+    font-size: 10px;
+}

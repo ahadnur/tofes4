@@ -1,7 +1,6 @@
 .dash__content__wrapper{
     
     min-height: 320px;
-    border-bottom:2px solid turquoise;
 
 }
 
@@ -43,7 +42,9 @@
     background-color: #ff9b41;
     border: none;
 }
-
+/* .dash_filter__option{
+    box-sizing: border-box;
+} */
 .dash__filter h5{
     text-align: left;
 }
@@ -53,9 +54,10 @@
 .filter__button {
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 .filter__button .filter__item{
-    margin: 5px;
+    margin: 3px;
     padding: 8px;
     min-width: 180px;
     min-height: 5px;
