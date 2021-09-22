@@ -32,6 +32,7 @@ export default function CaseDetail() {
       <Banner />
       <Grid container justifyContent="center" className="case3__form" style={{ marginTop: 20 }}>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Grid container spacing={4} >
           <Grid item md={2}>
             <Typography variant="h6">Detail of the case</Typography>
@@ -58,6 +59,8 @@ export default function CaseDetail() {
           </Grid>
 
 =======
+=======
+>>>>>>> d57dd1a801379ff91ec0361aac7dc5fc08aaa42d
         <Grid justifyContent="center" className="case-detail" container spacing={4} >
           <div>
             <h3>Detail of the case</h3>
@@ -90,6 +93,9 @@ export default function CaseDetail() {
             <p>Last updated</p>
             <h5>09/09/2021</h5>
           </div>
+<<<<<<< HEAD
+>>>>>>> d57dd1a801379ff91ec0361aac7dc5fc08aaa42d
+=======
 >>>>>>> d57dd1a801379ff91ec0361aac7dc5fc08aaa42d
         </Grid>
         <Grid container>
