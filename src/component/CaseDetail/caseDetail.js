@@ -31,36 +31,6 @@ export default function CaseDetail() {
     <Container>
       <Banner />
       <Grid container justifyContent="center" className="case3__form" style={{ marginTop: 20 }}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <Grid container spacing={4} >
-          <Grid item md={2}>
-            <Typography variant="h6">Detail of the case</Typography>
-          </Grid>
-          <Grid item md={1}>
-            <Typography variant="body2">Address</Typography>
-            <Typography variant="body1">Beer sheva, 1 1</Typography>
-          </Grid>
-          <Divider orientation="vertical" style={{ backgroundColor: 'white', height: 50, marginTop: 16 }} flexItem />
-          {
-            headData.map(item => (
-              <>
-                <Grid key={item.body2} item md={1}>
-                  <Typography variant="body2" className="caseHeader">{item.body2}</Typography>
-                  <Typography variant="body1" className="">{item.body1}</Typography>
-                </Grid>
-                <Divider orientation="vertical" style={{ backgroundColor: 'white', height: 50, marginTop: 16 }} flexItem />
-              </>
-            ))
-          }
-          <Grid item md={1}>
-            <Typography variant="body2" className="lastCaseHeader">Last updated</Typography>
-            <Typography variant="body1" className="lastCaseHeader">09/09/2021</Typography>
-          </Grid>
-
-=======
-=======
->>>>>>> d57dd1a801379ff91ec0361aac7dc5fc08aaa42d
         <Grid justifyContent="center" className="case-detail" container spacing={4} >
           <div>
             <h3>Detail of the case</h3>
@@ -93,10 +63,6 @@ export default function CaseDetail() {
             <p>Last updated</p>
             <h5>09/09/2021</h5>
           </div>
-<<<<<<< HEAD
->>>>>>> d57dd1a801379ff91ec0361aac7dc5fc08aaa42d
-=======
->>>>>>> d57dd1a801379ff91ec0361aac7dc5fc08aaa42d
         </Grid>
         <Grid container>
           {
