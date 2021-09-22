@@ -13,7 +13,7 @@ import { Box } from '@mui/system';
 import { Bottom } from './Bottom';
 import { Documents } from './Documents';
 import { Footer } from './Footer';
-
+import './caseDetail.css'
 
 export default function CaseDetail() {
   const [show, setShow] = useState({
@@ -31,6 +31,7 @@ export default function CaseDetail() {
     <Container>
       <Banner />
       <Grid container justifyContent="center" className="case3__form" style={{ marginTop: 20 }}>
+<<<<<<< HEAD
         <Grid container spacing={4} >
           <Grid item md={2}>
             <Typography variant="h6">Detail of the case</Typography>
@@ -56,6 +57,40 @@ export default function CaseDetail() {
             <Typography variant="body1" className="lastCaseHeader">09/09/2021</Typography>
           </Grid>
 
+=======
+        <Grid justifyContent="center" className="case-detail" container spacing={4} >
+          <div>
+            <h3>Detail of the case</h3>
+          </div>
+          <div>
+            <p>Address</p>
+            <h5>Beer sheba</h5>
+          </div>
+          <div>
+            <p>Block</p>
+            <h5>1</h5>
+          </div>
+          <div>
+            <p>Smoot</p>
+            <h5>1</h5>
+          </div>
+          <div>
+            <p>Court</p>
+            <h5>1</h5>
+          </div>
+          <div>
+            <p>Plane</p>
+            <h5>1</h5>
+          </div>
+          <div>
+            <p>Licening file number available</p>
+            <h5>1</h5>
+          </div>
+          <div>
+            <p>Last updated</p>
+            <h5>09/09/2021</h5>
+          </div>
+>>>>>>> d57dd1a801379ff91ec0361aac7dc5fc08aaa42d
         </Grid>
         <Grid container>
           {
@@ -146,9 +181,9 @@ export default function CaseDetail() {
         </Grid>
       </Grid>
       <Bottom />
-      <Documents/>
+      <Documents />
       <Bottom />
-      <Footer/>
+      <Footer />
     </Container >
   );
 }
