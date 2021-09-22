@@ -33,10 +33,10 @@ export default function CaseDetail() {
       <Grid container justifyContent="center" className="case3__form" style={{ marginTop: 20 }}>
         <Grid container spacing={4} >
           <Grid item md={2}>
-            <Typography variant="h5">Detail of the case</Typography>
+            <Typography variant="h6">Detail of the case</Typography>
           </Grid>
-          <Grid item md={3}>
-            <Typography variant="body2">address</Typography>
+          <Grid item md={1}>
+            <Typography variant="body2">Address</Typography>
             <Typography variant="body1">Beer sheva, 1 1</Typography>
           </Grid>
           <Divider orientation="vertical" style={{ backgroundColor: 'white', height: 50, marginTop: 16 }} flexItem />
@@ -44,16 +44,16 @@ export default function CaseDetail() {
             headData.map(item => (
               <>
                 <Grid key={item.body2} item md={1}>
-                  <Typography variant="body2">{item.body2}</Typography>
-                  <Typography variant="body1">{item.body1}</Typography>
+                  <Typography variant="body2" className="caseHeader">{item.body2}</Typography>
+                  <Typography variant="body1" className="">{item.body1}</Typography>
                 </Grid>
                 <Divider orientation="vertical" style={{ backgroundColor: 'white', height: 50, marginTop: 16 }} flexItem />
               </>
             ))
           }
           <Grid item md={1}>
-            <Typography variant="body2">Last updated</Typography>
-            <Typography variant="body1">09/09/2021</Typography>
+            <Typography variant="body2" className="lastCaseHeader">Last updated</Typography>
+            <Typography variant="body1" className="lastCaseHeader">09/09/2021</Typography>
           </Grid>
 
         </Grid>

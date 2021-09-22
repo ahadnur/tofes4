@@ -1,28 +1,32 @@
-
-.document_link{
-    display: flex;
-    list-style-type: none;
+.document_link {
+  display: flex;
+  list-style-type: none;
 }
 
-/* .document_link li{
-    min-width: 150px;
-    padding: 5px;
-} */
-.document_link li{
-    background-color: #eaeaea;
-    text-align: center;
-    color: black;
-    min-width: 150px;
-    padding: 5px;
-
+.document_link li {
+  background-color: #eaeaea;
+  text-align: center;
+  color: black;
+  min-width: 150px;
+  padding: 5px;
 }
-.document_link li:hover{
-    background-color: #4174b3;
-    color: white;
+.document_link li:hover {
+  background-color: #4174b3;
+  color: white;
 }
-.document_link li a{
-    text-decoration: none;
+.document_link li a {
+  text-decoration: none;
 }
-.MuiCardHeader-title{
-    font-size: 10px;
+.MuiCardHeader-title {
+  font-size: 10px;
+}
+.caseHeader {
+  min-width: 150px;
+  opacity: 0.7;
+}
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.css-12n0uxm-MuiGrid-root {
+  margin: 50px 0;
+}
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2{
+    padding: 20px;
 }

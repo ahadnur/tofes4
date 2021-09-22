@@ -131,8 +131,4 @@ export const headData = [
         body2:"Licence file number available",
         body1:1
     },
-    // {
-    //     body2:"Last updated",
-    //     body1:"09/09/2021"
-    // },
 ]

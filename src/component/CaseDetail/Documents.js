@@ -18,7 +18,7 @@ export const Documents = () => {
     return (
         <Container>
             <Grid container>
-                <Grid item md={6} xs={12}>
+                <Grid item md={6} xs={12} style={{marginTop: '50px'}}>
                     {/* <Box> */}
                     <Typography variant="subtitle1">Regulation for case approval</Typography>
                     <Grid item xs={12} md={6}>
