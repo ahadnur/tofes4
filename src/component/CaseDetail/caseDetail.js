@@ -12,7 +12,7 @@ import SendIcon from '@mui/icons-material/Send';
 import { Box } from '@mui/system';
 import { Bottom } from './Bottom';
 import { Documents } from './Documents';
-import { Footer } from './Footer';
+import DashNav from '../common/DashNav';
 import './caseDetail.css'
 
 export default function CaseDetail() {
@@ -28,6 +28,9 @@ export default function CaseDetail() {
 
   console.log(show)
   return (
+    <>
+      <DashNav />
+    
     <Container>
       <Banner />
       <Grid container justifyContent="center" className="case3__form" style={{ marginTop: 20 }}>
@@ -78,7 +81,7 @@ export default function CaseDetail() {
                   <ListItemText style={{ display: 'flex', justifyContent: 'flex-start' }} primary={item.title} />
                 </ListItemButton>
                 <Collapse in={show.id === item.id && show.open ? true : false} timeout="auto" unmountOnExit>
-                  <Grid container spacing={2}>
+                  <Grid container spacing={2} style={{ padding: "20px" }}>
                     {
                       item.itemData.map(subItem => (
                         <Grid item md={4}>
@@ -114,18 +117,19 @@ export default function CaseDetail() {
               <ListItemText style={{ display: 'flex', justifyContent: 'flex-start' }} primary="Correspondence with the same Command Engineers" />
             </ListItemButton>
             <Collapse in={show.id === "c3" && show.open ? true : false} timeout="auto" unmountOnExit>
-              <Grid container spacing={2}>
-                <Grid item >
+              <Grid container spacing={2} style={{padding: '20px'}}>
+                <Grid item className="caDeTextArea">
                   <Typography variant="body2">There the skeleton plan</Typography><br />
                   {/* <textarea style={{ marginBottom: 10 }} rows="4" cols="100"></textarea> */}
                   <Box container>
                     <TextareaAutosize
                       aria-label="minimum height"
                       minRows={4}
-                      style={{ width: 500, background: 'none', padding: 20, border: '1px solid white', color: 'white', outline: 'none' }}
+                      style={{ background: 'none', padding: 20, border: '1px solid white', color: 'white', outline: 'none' }}
+                      cols={40}
                     />
                   </Box>
-                  <Button style={{ marginRight: 10, marginBottom: 20 }} variant="contained">
+                  <Button style={{ margin: "20px 0"}} variant="contained">
                      Send
                   </Button>
                 </Grid>
@@ -136,7 +140,7 @@ export default function CaseDetail() {
                   <Typography variant="subtitle1">09/09/2021</Typography>
                   <Typography variant="body1">Shalav Levy,English</Typography>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={10} md={6} >
                   <Typography align="justify" variant="body2">
                     Hello, it is no clear what dcument you uploaded,
                     there is no need for what you uploaded.
@@ -154,7 +158,8 @@ export default function CaseDetail() {
       <Bottom />
       <Documents />
       <Bottom />
-      <Footer />
+      {/* <Footer /> */}
     </Container >
+    </>
   );
 }
