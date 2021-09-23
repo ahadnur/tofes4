@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@material-ui/core'
+import { Container, Grid, Typography, Button } from '@material-ui/core'
 import React from 'react'
 import '../Styles/createcase/caseform.css'
 
@@ -53,6 +53,8 @@ export const CaseForm2 = () => {
                     </Grid>
 
                     {/* </Grid> */}
+                    <Button variant="contained" style={{ marginTop: 20, marginLeft: 20, backgroundColor:'#ffc478' }}>Return</Button>
+                    <Button variant="contained" style={{ marginTop: 20, backgroundColor:'#ffc478' }}>Continue</Button>
                 </div>
             </Grid>
 

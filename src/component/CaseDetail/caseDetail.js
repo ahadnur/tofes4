@@ -122,12 +122,11 @@ export default function CaseDetail() {
                     <TextareaAutosize
                       aria-label="minimum height"
                       minRows={4}
-                      placeholder="Minimum 3 rows"
-                      style={{ width: 200 }}
+                      style={{ width: 500, background: 'none', padding: 20, border: '1px solid white', color: 'white', outline: 'none' }}
                     />
                   </Box>
                   <Button style={{ marginRight: 10, marginBottom: 20 }} variant="contained">
-                    <SendIcon style={{ minWidth: 30 }} /> Send
+                     Send
                   </Button>
                 </Grid>
               </Grid>
@@ -138,7 +137,7 @@ export default function CaseDetail() {
                   <Typography variant="body1">Shalav Levy,English</Typography>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <Typography align="center" variant="body2">
+                  <Typography align="justify" variant="body2">
                     Hello, it is no clear what dcument you uploaded,
                     there is no need for what you uploaded.
                     If it is new submission, submit a plan accordance with the procedure

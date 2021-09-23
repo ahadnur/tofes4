@@ -1,77 +1,77 @@
-.cform__content__wrapper{
-    min-height: 250px;
-    
-
+.cform__content__wrapper {
+  min-height: 250px;
 }
 
-.cform__content{
-    min-height: 300px;
+.cform__content {
+  min-height: 300px;
 }
-.cform__content ul{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.cform__content ul li{
-    list-style-type: none;
-    padding: 20px;
+.cform__content ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
-.cform__content ul li:hover{
-    border-bottom: 2px solid steelblue;
+.cform__content ul li {
+  list-style-type: none;
+  padding: 20px;
 }
 
-.cform__content ul li a{
-    text-decoration: none;
-    color: white;
+.cform__content ul li:hover {
+  border-bottom: 2px solid steelblue;
 }
 
-.c_paper{
-    min-width: 300px;
-    min-height: 150px;
-    margin-right: 5px;
-    margin-top: -5px;
-    box-sizing: border-box;
-    padding-right: 50px;
-}
-.c_paper h1{
-
-}
-.case__form input{
-    padding: 10px;
-    outline: none;
-    background-color:#4174b3;
-    border:1px solid white;
+.cform__content ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-.case__form select{
-    padding: 10px;
-    outline: none;
-    background-color:#4174b3;
-    border:1px solid white;
-    color: white;
+.c_paper {
+  min-width: 300px;
+  min-height: 150px;
+  margin-right: 5px;
+  margin-top: -5px;
+  box-sizing: border-box;
+  padding-right: 50px;
 }
-.case__form{
-    margin-top: 50;
-    background-color:#4174b3;
-    padding:30px;
-    width: 69%;
-    color: white;
+.case__form input {
+  padding: 10px;
+  outline: none;
+  background-color: #4174b3;
+  border: 1px solid white;
+  color: white;
+}
+
+.case__form select {
+  padding: 10px;
+  outline: none;
+  background-color: #4174b3;
+  border: 1px solid white;
+  color: white;
+}
+.case__form {
+  margin-top: 50;
+  background-color: #4174b3;
+  padding: 30px;
+  width: 69%;
+  color: white;
 }
 /* .case__form__grid */
-.bug__type{
-    display: flex;
-    justify-content: center;
+.bug__type {
+  display: flex;
+  justify-content: center;
 }
-.bug__type h5{
-    margin-top: 4px;
+.bug__type h5 {
+  margin-top: 4px;
 }
 
-.case3__form{
-    margin-top: 50;
-    background-color:#4174b3;
-    padding:30px;
-    width: 69%;
-    color: white;
+.case3__form {
+  margin-top: 50;
+  background-color: #4174b3;
+  padding: 30px;
+  width: 69%;
+  color: white;
+}
+
+.cf3-g {
+  margin: 10px 0;
 }
