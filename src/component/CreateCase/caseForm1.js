@@ -41,21 +41,21 @@ export const CaseForm1 = () => {
                             </select>
                         </Grid>
                     </Grid>
-                    <Grid container>
+                    <Grid container >
                         <Grid item md={3}>
                             <Typography variant="body2">Sattlement</Typography>
                             <input type="text" />
                         </Grid>
                         <Grid item md={3}>
-                            <Typography variant="body2">Sattlement</Typography>
+                            <Typography variant="body2">Smooth</Typography>
                             <input type="text" />
                         </Grid>
                         <Grid item md={3}>
-                            <Typography variant="body2">Sattlement</Typography>
+                            <Typography variant="body2">Lot Number</Typography>
                             <input type="text" style={{ color: 'white'}} />
                         </Grid>
                         <Grid item md={3}>
-                            <Typography variant="body2">Sattlement</Typography>
+                            <Typography variant="body2">Program Number</Typography>
                             <input type="text" />
                         </Grid>
                     </Grid>

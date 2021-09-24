@@ -39,6 +39,7 @@
   background-color: #4174b3;
   border: 1px solid white;
   color: white;
+  margin-bottom: 15px;
 }
 
 .case__form select {
@@ -47,28 +48,31 @@
   background-color: #4174b3;
   border: 1px solid white;
   color: white;
+  margin-bottom: 15px;
 }
 .case__form {
   margin-top: 50;
   background-color: #4174b3;
   padding: 30px;
-  width: 69%;
+  width: 100%;
   color: white;
 }
 /* .case__form__grid */
 .bug__type {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .bug__type h5 {
   margin-top: 4px;
+  margin-right: 10px;
 }
 
 .case3__form {
   margin-top: 50;
   background-color: #4174b3;
   padding: 30px;
-  width: 69%;
+  width: 100%;
   color: white;
 }
 

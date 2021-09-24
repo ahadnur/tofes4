@@ -74,7 +74,7 @@ export const CaseForm3 = () => {
 
                     <Button variant="contained" style={{ marginTop: 20, marginLeft: 20, backgroundColor:'#ffc478' }}>Add File</Button>
 
-                    <div style={{float: 'left', marginTop: '30px'}}>
+                    <div style={{float: 'left'}}>
                         <Button variant="contained" style={{ marginTop: 20, marginLeft: 20, backgroundColor:'#ffc478' }}>Return</Button>
                         <Button variant="contained" style={{ marginTop: 20, marginLeft: 20, backgroundColor:'#ffc478' }}>Open a new file</Button>
                     </div>

@@ -47,10 +47,9 @@ export const CaseForm = () => {
 
             <Banner/>
 
-            <Container>
                 <Grid container className="" spacing={2}>
                     <Grid item xs={12}>
-                        <Grid container justifyContent="center" spacing={4}>
+                        <Grid container justifyContent="center" spacing={4} style={{ margin: "20px 0 0 0" }}>
 
                             {
                                 navData.map(item => (
@@ -65,7 +64,6 @@ export const CaseForm = () => {
                     </Grid>
                 </Grid>
 
-            </Container>
             <form>
                 {component}
             </form>
