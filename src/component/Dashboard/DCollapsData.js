@@ -3,7 +3,7 @@
 export const colData = [
     {
         title: "Waiting for the engineer's care",
-        id:'d1',
+        
         type:  "residence",
         caseNo: "12121",
         tLastUpdate: "09/09/2021",
@@ -17,7 +17,6 @@ export const colData = [
     },
     {
         title: "Waiting for the file submitter to handle",
-        id:'d2',
         type: "office",
         caseNo: "12121",
         tLastUpdate: "09/09/2021",
@@ -31,7 +30,6 @@ export const colData = [
     },
     {
         title: "Waiting for the file submitter to handle",
-        id:'d3',
         type: "office",
         caseNo: "12121",
         tLastUpdate: "09/09/2021",

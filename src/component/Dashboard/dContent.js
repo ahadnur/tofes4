@@ -1,11 +1,14 @@
 import { Container } from '@mui/material'
 import React from 'react'
 import { DCollapes } from './DCollapes'
-import { Footer } from './Footer'
+import Footer from '../home/Footer'
+import DashNav from '../common/DashNav'
 
 
 export const DashContent = () => {
     return (
+        <>
+        <DashNav />
         <Container>
             <div className="dash__content__wrapper" >
                 <div className="dash__content" style={{
@@ -54,7 +57,8 @@ export const DashContent = () => {
                 </div>
             </div>
             <DCollapes />
-            <Footer />
         </Container>
+        <Footer />
+        </>
     )
 }

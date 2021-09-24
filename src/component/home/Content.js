@@ -9,11 +9,12 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import '../Styles/account/register.css'
 import Modal from '@mui/material/Modal';
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
+import  { Link as L }  from 'react-router-dom'
+
 
 const useStyles = makeStyles(theme => ({
     mod: {
@@ -43,13 +44,13 @@ export const Content = () => {
                         <div className="right-content-left">
                             <h2>אינך רשום למערכת?</h2>
                             <p>שלום רב! אנחנו מאוד שמחים לקבל אתכם למערכת...</p>
-                            <button className="register__btn">חלה תקלה</button>
+                            <button onClick={handleOpen} className="register__btn">חלה תקלה</button>
                         </div>
                         <div className="right-content-right">
                             <h2>כניסה למערכת למשתמש קיים</h2>
                             <input className="login__input" type="text" placeholder="מספר תעודת זהות" /><br />
                             <input className="login__input" type="text" placeholder="מספר טלפון נייד" /><br />
-                            <button onClick={handleOpen} className="login__btn">התחבר</button>
+                            <L to="/dashboard"><button className="login__btn">התחבר</button></L>
                         </div>
                     </div>
                     <div className="left-content">
@@ -70,7 +71,6 @@ export const Content = () => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
                 className={classess.mod}
-
             >
                 <Container style={{ backgroundColor: 'white', marginTop: 20 }} component="main" maxWidth="xs">
                     <CssBaseline />

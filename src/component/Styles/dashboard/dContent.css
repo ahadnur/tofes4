@@ -63,3 +63,8 @@
     min-height: 5px;
 }
 
+@media screen and (max-width: 768px) {
+    .filter__button{
+        flex-direction: column;
+    }
+}

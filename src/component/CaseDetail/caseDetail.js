@@ -14,19 +14,13 @@ import { Bottom } from './Bottom';
 import { Documents } from './Documents';
 import DashNav from '../common/DashNav';
 import './caseDetail.css'
+import {CaseDetailCollaps} from './CaseDetailCollaps'
 
 export default function CaseDetail() {
-  const [show, setShow] = useState({
-    id: '',
-    open: false
-  })
-
-  const handleClick = (e) => {
-
-    setShow({ ...show, id: e.currentTarget.id, open: !show.open })
-  };
-
-  console.log(show)
+  const [show, setShow] = useState(false)
+    const handleClick = (e) => {
+      setShow(!show)
+    }
   return (
     <>
       <DashNav />
@@ -68,42 +62,13 @@ export default function CaseDetail() {
           </div>
         </Grid>
         <Grid container>
-          {
-            Data.map(item => (
-              <List key={item.title}
-                sx={{ width: '100%', bgcolor: '#3769a0' }}
-                component="nav"
-                aria-labelledby="nested-list-subheader"
-                style={{ marginTop: 20 }}
-              >
-                <ListItemButton id={item.id} onClick={handleClick}>
-                  {show.id === item.id && show.open ? <RemoveIcon /> : <ControlPointIcon />}
-                  <ListItemText style={{ display: 'flex', justifyContent: 'flex-start' }} primary={item.title} />
-                </ListItemButton>
-                <Collapse in={show.id === item.id && show.open ? true : false} timeout="auto" unmountOnExit>
-                  <Grid container spacing={2} style={{ padding: "20px" }}>
-                    {
-                      item.itemData.map(subItem => (
-                        <Grid item md={4}>
-                          <Typography align="center" variant="subtitle2">{subItem.title}</Typography>
-                          <Divider style={{ backgroundColor: 'white' }} />
-                          {
-                            subItem.capTitle.map(subsubItem => (
-                              <>
-                                <Typography variant="caption">{subsubItem.caption}</Typography>
-                                <Typography variant="subtitle1">{subsubItem.subtitle}</Typography>
-                              </>
-                            ))
-                          }
-                        </Grid>
-                      ))
-                    }
-                  </Grid>
-                </Collapse>
-              </List>
 
+          {
+            Data.map(item=>(
+              <CaseDetailCollaps Data={item}/>
             ))
           }
+
           <List
             sx={{ width: '100%', bgcolor: '#3769a0' }}
             component="nav"
@@ -112,15 +77,15 @@ export default function CaseDetail() {
 
           >
 
-            <ListItemButton id="c3" onClick={handleClick}>
-              {"c3" === show.id && show.open ? <RemoveIcon /> : <ControlPointIcon />}
+            <ListItemButton onClick={handleClick}>
+              {show ? <RemoveIcon /> : <ControlPointIcon />}
               <ListItemText style={{ display: 'flex', justifyContent: 'flex-start' }} primary="Correspondence with the same Command Engineers" />
             </ListItemButton>
-            <Collapse in={show.id === "c3" && show.open ? true : false} timeout="auto" unmountOnExit>
+            <Collapse in={show ? true : false} timeout="auto" unmountOnExit>
               <Grid container spacing={2} style={{padding: '20px'}}>
                 <Grid item className="caDeTextArea">
                   <Typography variant="body2">There the skeleton plan</Typography><br />
-                  {/* <textarea style={{ marginBottom: 10 }} rows="4" cols="100"></textarea> */}
+                 
                   <Box container>
                     <TextareaAutosize
                       aria-label="minimum height"

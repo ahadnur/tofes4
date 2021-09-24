@@ -1,10 +1,9 @@
 
 
 export const Data = [
-    {
-        title: "Detail of the building",
-        id:'c1',
-        itemData: [
+    [
+        "Detail of the building",
+        [
             {
                 title: "Classification of structure",
                 capTitle: [
@@ -53,11 +52,10 @@ export const Data = [
                 ]
             }
         ]
-    },
-    {
-        title: "Contact Information",
-        id:'c2',
-        itemData: [
+    ],
+    [
+        "Contact Information",
+        [
             {
                 title: "Detail of the applicant(planner)",
                 capTitle: [
@@ -110,7 +108,8 @@ export const Data = [
                 ]
             }
         ]
-    }
+    ],
+    
 
 ]
 

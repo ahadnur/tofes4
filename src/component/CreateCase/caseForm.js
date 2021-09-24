@@ -5,6 +5,7 @@ import { CaseForm2 } from './caseForm2'
 import { CaseForm3 } from './caseForm3'
 import '../Styles/createcase/caseform.css'
 import { Banner } from '../common/banner'
+import DashNav from '../common/DashNav'
 
 
 export const CaseForm = () => {
@@ -40,6 +41,8 @@ export const CaseForm = () => {
     }
 
     return (
+        <>
+        <DashNav />
         <Container>
 
             <Banner/>
@@ -67,5 +70,6 @@ export const CaseForm = () => {
                 {component}
             </form>
         </Container>
+        </>
     )
 }
