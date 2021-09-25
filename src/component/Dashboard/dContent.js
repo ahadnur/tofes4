@@ -9,7 +9,7 @@ export const DashContent = () => {
     return (
         <>
         <DashNav />
-        <Container>
+        {/* <Container> */}
             <div className="dash__content__wrapper" >
                 <div className="dash__content" style={{
                     backgroundImage: `url('images/oref_hp_bg.png')`,
@@ -57,7 +57,7 @@ export const DashContent = () => {
                 </div>
             </div>
             <DCollapes />
-        </Container>
+        {/* </Container> */}
         <Footer />
         </>
     )

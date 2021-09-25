@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 }))
 export const Content = () => {
 
-    const classess = useStyles()
+    const classes = useStyles()
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(!open);
     return (
@@ -70,7 +70,7 @@ export const Content = () => {
                 onClose={handleOpen}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
-                className={classess.mod}
+                className={classes.mod}
             >
                 <Container style={{ backgroundColor: 'white', marginTop: 20 }} component="main" maxWidth="xs">
                     <CssBaseline />

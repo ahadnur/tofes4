@@ -3,10 +3,10 @@ import React from 'react'
 import '../Styles/createcase/caseform.css'
 
 
-export const CaseForm2 = () => {
+export const CaseForm2 = ({display}) => {
     return (
 
-        <Container>
+        <Container style={{display: display=== false ? 'none' : 'block'}}>
 
             <Grid container justifyContent="center" style={{ marginTop: 20 }}>
                 <div className="case__form">

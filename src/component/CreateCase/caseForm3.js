@@ -2,9 +2,9 @@ import { Container, Grid, Typography, Button } from '@material-ui/core'
 import React from 'react'
 import '../Styles/createcase/caseform.css'
 
-export const CaseForm3 = () => {
+export const CaseForm3 = ({display}) => {
     return (
-        <Container>
+        <Container style={{display: display=== false ? 'none' : 'block'}}>
             <Grid container justifyContent="center" style={{marginTop:20}}>
                 <div className="case3__form">
                     <h3>Select files to upload</h3>
