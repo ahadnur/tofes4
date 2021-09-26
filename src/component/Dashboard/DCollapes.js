@@ -6,7 +6,6 @@ export const DCollapes = () => {
    
     return (
         <Grid container>
-
             {
                 colData.map(item=>(
                     <CollapsData colData={item}/>
