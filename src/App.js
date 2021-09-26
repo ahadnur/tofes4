@@ -8,6 +8,7 @@ import { Home } from './component/home/Home';
 import { DashContent } from "./component/Dashboard/dContent";
 import { CaseForm } from "./component/CreateCase/caseForm";
 import CaseDetail from "./component/CaseDetail/caseDetail";
+import { Admin } from "./component/Admin/admin";
 // import { CaseDetail } from './component/CaseDetail/caseDetail'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         {/* <Route exact path="/register"><Register /></Route> */}
         <Route exact path="/caseform"><CaseForm /></Route>
         <Route exact path="/casedetail"><CaseDetail/></Route>
+        <Route exact path="/admin"><Admin/></Route>
       </Switch>
     </Router>
   );
