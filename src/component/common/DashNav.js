@@ -6,7 +6,7 @@ const DashNav = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" style={{padding: "20px"}}>
 
-            <Navbar.Brand href="/">
+            <Navbar.Brand href="/dashboard">
                 <img
                     alt=""
                     src={Logo}

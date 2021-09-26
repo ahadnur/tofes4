@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light" style={{padding: "20px"}}>
 
-            <Navbar.Brand href="/">
+            <Navbar.Brand href="/dashboard">
                 <img
                     alt=""
                     src={Logo}
@@ -19,7 +19,7 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Link href="#">HFC</Nav.Link>
+                    <Nav.Link href="/dashboard">HFC</Nav.Link>
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/caseform">Create Case</Nav.Link>
                     <Nav.Link href="/casedetail">Case Details</Nav.Link>                

@@ -3,10 +3,8 @@ import React, { useState } from 'react'
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import RemoveIcon from '@mui/icons-material/Remove';
 import ClearIcon from '@mui/icons-material/Clear';
-import { colData } from './DCollapsData';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Link } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 
 export const CollapsData = ({ colData }) => {
     const [show, setShow] = useState(false)
@@ -76,11 +74,13 @@ export const CollapsData = ({ colData }) => {
                                 </Grid>
                                 <Grid item md={6}>
                                     <Typography variant="caption">
+                                    <Link to="/casedetail">
                                         <p>To view the file
                                             <IconButton>
-                                                <Link to="/casedetail"><ArrowBackIcon fontSize="small" /></Link>
+                                                <ArrowBackIcon fontSize="small" />
                                             </IconButton>
                                         </p>
+                                        </Link>
                                     </Typography>
                                 </Grid>
                             </Grid>

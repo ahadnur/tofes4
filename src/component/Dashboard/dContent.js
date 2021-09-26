@@ -1,5 +1,5 @@
-import { Container } from '@mui/material'
-import React from 'react'
+import React from 'react' 
+import {Link} from 'react-router-dom'
 import { DCollapes } from './DCollapes'
 import Footer from '../home/Footer'
 import DashNav from '../common/DashNav'
@@ -16,13 +16,13 @@ export const DashContent = () => {
                     objectFit: 'contain'
                 }}>
                     <ul>
-                        <li><a href="">Update personal detail</a></li>
-                        <li><a href="">Opening a new portfolio</a></li>
-                        <li><a href="">My bags</a></li>
+                        <li><Link to="">Update personal detail</Link></li>
+                        <li><Link to="/caseform">Opening a new portfolio</Link></li>
+                        <li><Link to="">My bags</Link></li>
                     </ul>
                     <div className="Dbutton__part">
                         <h3>My bags</h3>
-                        <button>Open a new file</button>
+                        <Link to="/caseform"><button>Open a new file</button></Link>
                     </div>
                 </div>
 

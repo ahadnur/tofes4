@@ -56,7 +56,7 @@ export const CaseForm1 = ({ display }) => {
                         </Grid>
                     </Grid>
                     <Grid container>
-                        <Grid item md={12} xs={12}>
+                        <Grid item md={12} xs={12} style={{marginTop: 50}}>
                             <Typography variant="body2">Sattlement</Typography>
                             <input type="text" />
                         </Grid>

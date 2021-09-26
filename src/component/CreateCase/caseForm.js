@@ -6,7 +6,6 @@ import { CaseForm3 } from './caseForm3'
 import '../Styles/createcase/caseform.css'
 import { Banner } from '../common/banner'
 import DashNav from '../common/DashNav'
-import { CreateNav } from './createNav'
 
 const navData = [
     {

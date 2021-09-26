@@ -12,9 +12,6 @@ export const DCollapes = () => {
                     <CollapsData colData={item}/>
                 ))
             }
-            {/* <CollapsData colData={colData[0]}/>
-            <CollapsData colData={colData[1]}/>
-            <CollapsData colData={colData[2]}/> */}
         </Grid>
     )
 }
