@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { DCollapes } from './DCollapes'
 import Footer from '../home/Footer'
 import DashNav from '../common/DashNav'
+import CategoryTab from './CategoryTab'
 
 
 export const DashContent = () => {
@@ -56,6 +57,8 @@ export const DashContent = () => {
                     </div>
                 </div>
             </div>
+            {/* Category Tab */}
+            <CategoryTab />
             <DCollapes />
         {/* </Container> */}
         <Footer />
