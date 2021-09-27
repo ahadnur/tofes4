@@ -1,12 +1,10 @@
 import '../Styles/home/content.css'
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import '../Styles/account/register.css'
@@ -41,17 +39,18 @@ export const Content = () => {
                 <h1 style={{ marginBottom: '50px' }}>לאישור בקשות להיתר בנייה</h1>
                 <div className="content">
                     <div className="right-content">
-                        <div className="right-content-left">
-                            <h2>אינך רשום למערכת?</h2>
-                            <p>שלום רב! אנחנו מאוד שמחים לקבל אתכם למערכת...</p>
-                            <button onClick={handleOpen} className="register__btn">חלה תקלה</button>
-                        </div>
-                        <div className="right-content-right">
+                    <div className="right-content-right">
                             <h2>כניסה למערכת למשתמש קיים</h2>
                             <input className="login__input" type="text" placeholder="מספר תעודת זהות" /><br />
                             <input className="login__input" type="text" placeholder="מספר טלפון נייד" /><br />
                             <L to="/dashboard"><button className="login__btn">התחבר</button></L>
                         </div>
+                        <div className="right-content-left">
+                            <h2>אינך רשום למערכת?</h2>
+                            <p>שלום רב! אנחנו מאוד שמחים לקבל אתכם למערכת...</p>
+                            <button onClick={handleOpen} className="register__btn">חלה תקלה</button>
+                        </div>
+                        
                     </div>
                     <div className="left-content">
                         <h3>מערכת רישוי מהנדסים</h3>
@@ -73,7 +72,6 @@ export const Content = () => {
                 className={classes.mod}
             >
                 <Container style={{ backgroundColor: 'white', marginTop: 20 }} component="main" maxWidth="xs">
-                    <CssBaseline />
                     <Box
                         sx={{
                             marginTop: 8,
@@ -82,96 +80,56 @@ export const Content = () => {
                             alignItems: 'center',
                         }}
                     >
-                        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                            <LockOutlinedIcon />
-                        </Avatar>
-                        <Typography component="h1" variant="h5">
+                        <Typography component="h1" variant="h5" style={{backgroundColor: '#4264a2', width: '100%',color: 'white', padding: '30px'}}>
                             Registration to the system
                         </Typography>
                         <Box component="form" noValidate sx={{ mt: 3 }}>
-                            <Grid container spacing={2}>
+                            <Grid container spacing={2} className="form_control">
                                 <Grid item xs={12} sm={6}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="First Name"
-                                        autoFocus
-                                    />
+                                    <label htmlFor="fname">First name</label>
+                                    <input type="text" name="fname" />
                                 </Grid>
                                 <Grid item xs={12} sm={6}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Last Name"
-                                    />
+                                    <label htmlFor="lname">Last name</label>
+                                    <input type="text" name="lname" />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Id Number"
-                                    />
+                                <Grid item xs={12} sm={6}>
+                                    <label htmlFor="id">ID number</label>
+                                    <input type="text" name="id" />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Profession"
-                                    />
+                                <Grid item xs={12} sm={6}>
+                                    <label htmlFor="profession">Profession</label>
+                                    <input type="text" name="profession" />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Liscense Number"
-                                    />
+                                <Grid item xs={12} sm={6}>
+                                    <label htmlFor="license">License number</label>
+                                    <input type="text" name="license" />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Mobile Phone (this will be used for connection)"
-                                    />
+                                <Grid item xs={12} sm={6}>
+                                    <label htmlFor="mobile">Mobile Phone (this will be used for connection)</label>
+                                    <input type="text" name="mobile" />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Additional Mobile Phone (Permission)"
-                                    />
+                                <Grid item xs={12} sm={6}>
+                                    <label htmlFor="additonalMobile">Additional mobile phone (permission)</label>
+                                    <input type="text" name="additonalMobile" />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Email"
-                                        type="email"
-                                    />
+                                <Grid item xs={12} sm={6}>
+                                    <label htmlFor="email">E-mail</label>
+                                    <input type="text" name="email" />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        required
-                                        fullWidth
-                                        label="Name of office / planning body (authority)"
-                                    />
+                                <Grid item xs={12} sm={6}>
+                                    <label htmlFor="nameOfOffice">Name of office / planning body (authority)</label>
+                                    <input type="text" name="nameOfOffice" />
                                 </Grid>
                             </Grid>
                             <Button
                                 type="submit"
-                                fullWidth
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
-                                style={{ backgroundColor: "#ffc478", marginTop: '30px' }}
+                                style={{ backgroundColor: "#ffc478", margin: '30px 30px 30px 0' }}
                             >
                                 Sign Up
                             </Button>
-                            <Grid container justifyContent="flex-end">
-                                <Grid item>
-                                    <Link href="/" variant="body2">
-                                        Already have an account? Sign in
-                                    </Link>
-                                </Grid>
-                            </Grid>
                         </Box>
                     </Box>
                 </Container>

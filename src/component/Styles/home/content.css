@@ -1,118 +1,130 @@
+.content-wrapper {
+  min-height: 60vh;
+  padding: 0 150px;
+}
+.content-wrapper h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  font-size: 40px;
+  margin-top: 0px;
+}
 
-.content-wrapper{
-    min-height: 60vh;
-    padding: 0 150px;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.content-wrapper h1{
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    color: white;
-    font-size: 40px;
-    margin-top: 0px;
+.content-heading {
+  padding-top: 3rem;
 }
+.right-content {
+  display: flex;
+  width: 600px;
+  height: 250px;
+  color: black;
+}
+.left-content {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.459);
+  width: 500px;
+  
+}
+.left-content h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.left-content p {
+  font-size: 16px;
 
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
-.content-heading{
-    padding-top: 3rem;
+.right-content-right {
+  background-color: #4264a2;
 }
-.right-content{
-    display: flex;
-    width: 600px;
-    height: 250px;
-    background-color: rgb(241, 229, 217);
-    color: black;
-}
-.left-content{
-    margin-right: 50px;
-    padding: 30px;
-}
-.left-content h3{
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-.left-content p{
-    font-weight: bold;
-    width: 400px;
-    font-size: 16px;
+.right-content-left {
+  background-color: #344f80c9;
 }
 .right-content-right,
-.right-content-left{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.right-content-right h2{
-    font-size: 18px;
-    margin: 0 0 25px 0;
-    color: rgb(255, 196, 120);
-}
-.right-content-left h2{
-    color: rgb(255, 196, 120);
-    margin: 0;
-    font-size: 18px;
-}
-.right-content-left p{
-    font-size: 15px;
-    margin: 0;
-}
-.register__btn{
-    border: 1px solid rgb(255, 196, 120);
-    padding: 5px 20px;
-    color: rgb(255, 196, 120);
-    margin: 0;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 15px;
-    width: 60%;
-}
-.register__btn:hover{
-    background: rgb(255, 196, 120);
-    color: black;
+.right-content-left {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.login__input{
-    height: 30px;
-    padding: 2px 20px;
-    outline: none;
-    border: 1px solid rgb(255, 196, 120);
-    font-size: 15px;
-    border-radius: 3px;
+.right-content-right h2 {
+  font-size: 14px;
+  margin: 0 0 25px 0;
+  color: white;
 }
-.login__btn{
-    border: 1px solid rgb(255, 196, 120);
-    padding: 5px 20px;
-    color: rgb(255, 196, 120);
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 15px;
-    width: 60%;
+.right-content-left h2 {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+.right-content-left p {
+  font-size: 12px;
+  margin: 0;
+  max-width: 175px;
+  color: white;
+}
+.register__btn {
+  border: 1px solid rgb(255, 196, 120);
+  padding: 5px 20px;
+  color: black;
+  background-color: rgb(255, 196, 120);
+  margin: 0;
+  cursor: pointer;
+  font-size: 12px;
+  width: 60%;
 }
 
-.login__btn:hover{
-    background: rgb(255, 196, 120);
-    color: black;
+.login__input {
+  height: 30px;
+  padding: 8px 12px;
+  outline: none;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  width: 175px;
+  border: none;
+}
+.login__btn {
+  border: 1px solid rgb(255, 196, 120);
+  padding: 5px 20px;
+  background-color: rgb(255, 196, 120);
+  color: black;
+  cursor: pointer;
+  font-size: 12px;
+  width: 60%;
+}
+
+.css-nzinn5-MuiContainer-root{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* From material UI */
 .MuiTypography-gutterBottom {
-    font-size: 20px !important;
+  font-size: 20px !important;
+}
+
+.form_control{
+  padding:  0 30px 30px 0;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 @media screen and (max-width: 768px) {
-    .content-wrapper{
-        padding: 20px;
-    }
-    .content-wrapper h1{
-       font-size: 30px;
-    }
-    .content{
-        flex-direction: column;
-    }
+  .content-wrapper {
+    padding: 20px;
+  }
+  .content-wrapper h1 {
+    font-size: 30px;
+  }
+  .content {
+    flex-direction: column;
+  }
 }

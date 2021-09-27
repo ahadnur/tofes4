@@ -50,7 +50,7 @@ const Footer = () => {
         <footer className="footer">
             {
                 buildingData.map((item) => 
-                    <Cardd name={item.name} email={item.email} phone={item.phone}/>
+                    <Cardd name={item.name} email={item.email} phone={item.phone} style={{textAlign: 'center'}}/>
                 )
             }
         </footer>
@@ -64,17 +64,17 @@ const Cardd = (props) => {
         <div className={classes.footer}>
             <Card className={classes.root}>
             <CardActionArea>
-                <CardContent>
-                <Typography gutterBottom variant="h5" component="h1">
+                <CardContent style={{textAlign: 'center'}}>
+                <Typography  variant="h5" component="h1">
                     <BiBuildings value={{ className: 'reactIcons' }} />
                 </Typography>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography  variant="body2" component="p">
                     {props.name}
                 </Typography>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography  variant="body2" component="p">
                     {props.email}
                 </Typography>
-                <Typography gutterBottom variant="h5" component="h5">
+                <Typography  variant="body2" component="p">
                     {props.phone}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
