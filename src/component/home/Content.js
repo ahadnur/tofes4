@@ -1,8 +1,5 @@
 import '../Styles/home/content.css'
 import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -21,7 +18,7 @@ const useStyles = makeStyles(theme => ({
         left: '10%',
         overflow: 'scroll',
         height: '100%',
-        display: 'block'
+        display: 'block',
     }
 }))
 export const Content = () => {
@@ -126,7 +123,7 @@ export const Content = () => {
                                 type="submit"
                                 variant="contained"
                                 sx={{ mt: 3, mb: 2 }}
-                                style={{ backgroundColor: "#ffc478", margin: '30px 30px 30px 0' }}
+                                style={{ backgroundColor: "#ffc478", margin: '30px 0 30px 0' }}
                             >
                                 Sign Up
                             </Button>

@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin-bottom: 50px;
 }
 .content-heading {
   padding-top: 3rem;
@@ -30,7 +30,6 @@
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.459);
   width: 500px;
-  
 }
 .left-content h3 {
   font-size: 32px;
@@ -38,7 +37,6 @@
 }
 .left-content p {
   font-size: 16px;
-
 }
 .right-content-right {
   background-color: #4264a2;
@@ -101,7 +99,7 @@
   width: 60%;
 }
 
-.css-nzinn5-MuiContainer-root{
+.css-nzinn5-MuiContainer-root {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -111,10 +109,13 @@
   font-size: 20px !important;
 }
 
-.form_control{
-  padding:  0 30px 30px 0;
+.form_control {
+  width: 400px !important;
   display: flex !important;
   flex-direction: column !important;
+}
+.form_control input {
+  width: 300px;
 }
 
 @media screen and (max-width: 768px) {
