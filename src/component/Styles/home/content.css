@@ -1,6 +1,6 @@
 .content-wrapper {
   min-height: 60vh;
-  padding: 0 150px;
+  padding: 50px 150px;
 }
 .content-wrapper h1 {
   display: flex;
