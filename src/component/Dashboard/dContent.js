@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import { DCollapes } from './DCollapes'
 import Footer from '../home/Footer'
 import DashNav from '../common/DashNav'
-import CategoryTab from './CategoryTab'
+import CategoryTab from '../common/CategoryTab'
 
 
 export const DashContent = () => {

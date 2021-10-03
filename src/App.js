@@ -21,6 +21,8 @@ function App() {
         <Route exact path="/caseform"><CaseForm /></Route>
         <Route exact path="/casedetail"><CaseDetail/></Route>
         <Route exact path="/admin"><Admin/></Route>
+        <Route exact path="/documents"><Admin/></Route>
+
       </Switch>
     </Router>
   );

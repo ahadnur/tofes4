@@ -4,7 +4,6 @@ import { Nav } from 'react-bootstrap'
 const CategoryTab = () => {
     return (
         <>
-            <hr />
             <Nav className="justify-content-center" activeKey="/home" variant="tabs" style={{margin: "20px 0"}}>
                 <Nav.Item>
                     <Nav.Link href="#">אדריכל</Nav.Link>
