@@ -1,4 +1,4 @@
-import React from 'react' 
+import {React, useState} from 'react' 
 import {Link} from 'react-router-dom'
 import { DCollapes } from './DCollapes'
 import Footer from '../home/Footer'
@@ -8,10 +8,13 @@ import {AiOutlineClear} from 'react-icons/ai'
 
 
 export const DashContent = () => {
+    const [display, setDisplay] = useState(false)
+    const handleMainMenu = () => {
+        setDisplay(!display);
+      };
     return (
         <>
         <DashNav />
-        {/* <Container> */}
             <div className="dash__content__wrapper" >
                 <div className="dash__content" style={{
                     backgroundImage: `url('images/oref_hp_bg.png')`,
@@ -56,11 +59,11 @@ export const DashContent = () => {
                             <option>3</option>
                         </select>
                         <input type="button" className="filter__item" value="Filter" />
-                        <input type="button" className="filter__item" value="קטגוריות" />
+                        <input onClick={handleMainMenu} type="button" className="filter__item" value="קטגוריות" />
                     </div>
                 </div>
             </div>
-            <CategoryTab />
+            <CategoryTab display={display} />
             <DCollapes />
         <Footer />
         </>
