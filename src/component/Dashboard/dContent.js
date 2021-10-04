@@ -4,6 +4,7 @@ import { DCollapes } from './DCollapes'
 import Footer from '../home/Footer'
 import DashNav from '../common/DashNav'
 import CategoryTab from '../common/CategoryTab'
+import {AiOutlineClear} from 'react-icons/ai'
 
 
 export const DashContent = () => {
@@ -29,7 +30,7 @@ export const DashContent = () => {
 
             </div>
             <div className="dash__filter">
-                <h5>Clear filter(icon)</h5>
+                <h5 style={{paddingLeft: '20px'}}><AiOutlineClear></AiOutlineClear> Clear filter</h5>
                 <div className="dash_filter__option">
                     <p>Filter by</p>
                     <div className="filter__button">
