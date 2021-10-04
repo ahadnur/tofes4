@@ -54,7 +54,7 @@
 .filter__button {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
+    align-items: center;
 }
 .filter__button .filter__item{
     margin: 3px;

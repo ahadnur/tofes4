@@ -32,6 +32,7 @@ export const DashContent = () => {
             <div className="dash__filter">
                 <h5 style={{paddingLeft: '20px'}}><AiOutlineClear></AiOutlineClear> Clear filter</h5>
                 <div className="dash_filter__option">
+
                     <p>Filter by</p>
                     <div className="filter__button">
                         <select className="filter__item">
@@ -55,13 +56,12 @@ export const DashContent = () => {
                             <option>3</option>
                         </select>
                         <input type="button" className="filter__item" value="Filter" />
+                        <input type="button" className="filter__item" value="קטגוריות" />
                     </div>
                 </div>
             </div>
-            {/* Category Tab */}
             <CategoryTab />
             <DCollapes />
-        {/* </Container> */}
         <Footer />
         </>
     )
