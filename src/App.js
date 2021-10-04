@@ -9,6 +9,7 @@ import { DashContent } from "./component/Dashboard/dContent";
 import { CaseForm } from "./component/CreateCase/caseForm";
 import CaseDetail from "./component/CaseDetail/caseDetail";
 import { Admin } from "./component/Admin/admin";
+import CaroSel from "./component/TestCar";
 // import { CaseDetail } from './component/CaseDetail/caseDetail'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/casedetail"><CaseDetail/></Route>
         <Route exact path="/admin"><Admin/></Route>
         <Route exact path="/documents"><Admin/></Route>
+        <Route exact path="/car"><CaroSel/></Route>
 
       </Switch>
     </Router>
