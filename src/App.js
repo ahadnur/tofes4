@@ -9,8 +9,7 @@ import { DashContent } from "./component/Dashboard/dContent";
 import { CaseForm } from "./component/CreateCase/caseForm";
 import CaseDetail from "./component/CaseDetail/caseDetail";
 import { Admin } from "./component/Admin/admin";
-import CaroSel from "./component/TestCar";
-// import { CaseDetail } from './component/CaseDetail/caseDetail'
+import StepperExample from "./testStepper";
 
 function App() {
   return (
@@ -23,8 +22,7 @@ function App() {
         <Route exact path="/casedetail"><CaseDetail/></Route>
         <Route exact path="/admin"><Admin/></Route>
         <Route exact path="/documents"><Admin/></Route>
-        <Route exact path="/car"><CaroSel/></Route>
-
+        <Route exact patth="/stepper"><StepperExample/></Route>
       </Switch>
     </Router>
   );

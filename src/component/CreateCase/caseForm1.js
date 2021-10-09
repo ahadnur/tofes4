@@ -1,11 +1,11 @@
 import { Container, Grid, Typography, Button } from '@material-ui/core'
 import React, { useState } from 'react'
-import '../Styles/createcase/caseform.css'
+// import '../Styles/createcase/caseform.css'
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import { IconButton } from '@mui/material';
 
 
-export const CaseForm1 = ({ display }) => {
+export const CaseForm1 = () => {
     const [state1, setState1] = useState("")
     const [state2, setState2] = useState("")
     const [state3, setState3] = useState("")
@@ -24,10 +24,9 @@ export const CaseForm1 = ({ display }) => {
     const handleAccountBalanceIcon4 = (e) => {
         setState4(state1 === "white" ? "" : "white")
     }
-    console.log("Caseform", state1)
     return (
-        <Container style={{ display: display === false ? 'none' : 'block' }}>
-            <Grid container justifyContent="center" style={{ marginTop: 20 }}>
+        <Container>
+            <Grid container justifyContent="center" style={{ marginTop: 20,color:"black" }}>
                 <div className="case__form">
                     <Grid container>
                         <Grid className="bug__type" item md={3}>
@@ -58,11 +57,11 @@ export const CaseForm1 = ({ display }) => {
                     <Grid container>
                         <Grid item md={12} xs={12} style={{marginTop: 50}}>
                             <Typography variant="body2">Sattlement</Typography>
-                            <input type="text" />
+                            <input type="text" placeholder="Sattlement"/>
                         </Grid>
                         <Grid item md={12} xs={12}>
                             <Typography variant="body2">Commitee</Typography>
-                            <select className="case_filter">
+                            <select >
                                 <option>Type of structure</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -130,7 +129,7 @@ export const CaseForm1 = ({ display }) => {
                             <textarea rows="4" cols="50" style={{ backgroundColor: 'transparent', border: '1px solid white', outline: 'none', padding: '10px', color: 'white' }}></textarea>
                         </Grid>
                     </Grid>
-                    <Button variant="contained" style={{ marginTop: 20, backgroundColor: '#ffc478' }}>Continue</Button>
+                    {/* <Button variant="contained" style={{ marginTop: 20, backgroundColor: '#ffc478' }}>Continue</Button> */}
                 </div>
             </Grid>
         </Container>

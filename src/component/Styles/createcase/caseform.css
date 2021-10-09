@@ -36,26 +36,26 @@
 .case__form input {
   padding: 10px;
   outline: none;
-  background-color: #4174b3;
-  border: 1px solid white;
-  color: white;
+  /* background-color: #4174b3; */
+  border: 1px solid black;
+  color: black;
   margin-bottom: 15px;
 }
 
 .case__form select {
   padding: 10px;
   outline: none;
-  background-color: #4174b3;
-  border: 1px solid white;
-  color: white;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
   margin-bottom: 15px;
 }
 .case__form {
   margin-top: 50;
-  background-color: #4174b3;
+  /* background-color: #4174b3; */
   padding: 30px;
   width: 100%;
-  color: white;
+  color: black
 }
 /* .case__form__grid */
 .bug__type {
@@ -70,7 +70,7 @@
 
 .case3__form {
   margin-top: 50;
-  background-color: #4174b3;
+ 
   padding: 30px;
   width: 100%;
   color: white;
