@@ -8,7 +8,7 @@ export const CaseForm3 = ({ display }) => {
     <Container style={{ display: display === false ? "none" : "block" }}>
       <Grid container justifyContent="center" style={{ marginTop: 20 }}>
         <div className="case3__form">
-          <div style={{ backgroundColor: "#1a172e" }}>
+          <div style={{ backgroundColor: "#1a172e", padding: '20px' }}>
             <h3>Select files to upload</h3>
             <Typography variant="body2">
               Select a file name that contain only the following
