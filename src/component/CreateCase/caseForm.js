@@ -24,7 +24,8 @@ import VideoLabelIcon from "@mui/icons-material/VideoLabel";
 import StepConnector, {
   stepConnectorClasses,
 } from "@mui/material/StepConnector";
-
+import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
+import EditRoadIcon from '@mui/icons-material/EditRoad';
 
 const steps = ["Detail of case", "Detail of building", "Documents"];
 
@@ -142,8 +143,8 @@ function ColorlibStepIcon(props) {
   const { active, completed, className } = props;
 
   const icons = {
-    1: <SettingsIcon />,
-    2: <GroupAddIcon />,
+    1:<EditRoadIcon/>,
+    2: <MailOutlineOutlinedIcon />,
     3: <VideoLabelIcon />,
   };
 
