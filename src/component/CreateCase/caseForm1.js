@@ -69,8 +69,8 @@ export const CaseForm1 = () => {
               <h5>Plan changes</h5>
             </Grid>
           </Grid>
-          {/* <Grid container style={{ color: "black" }}></Grid> */}
-          <Grid container spacing={2} style={{ color: "black" }}>
+          <div style={{marginTop:'50px'}}></div>
+          <Grid container spacing={2} style={{ color: "black"}}>
             <Grid item sm={12} md={6}>
               <Form.Label>Sattlement</Form.Label>
               <Form.Control type="text" />
