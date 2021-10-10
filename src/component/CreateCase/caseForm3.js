@@ -76,13 +76,12 @@ export const CaseForm3 = ({ display }) => {
             spacing={2}
             style={{ margin: "20px 0", color: "black" }}
           >
-            <Grid item md={12}>
+            <Grid item sm={12} md={6}>
               <Form.Group controlId="formFileSm" className="mb-3">
                 <Form.Label>Additional files (permission)</Form.Label>
                 <Form.Control type="file" size="sm" />
               </Form.Group>
             </Grid>
-            
           </Grid>
         </div>
       </Grid>

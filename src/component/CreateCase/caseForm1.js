@@ -69,14 +69,13 @@ export const CaseForm1 = () => {
               <h5>Plan changes</h5>
             </Grid>
           </Grid>
-          <Grid container style={{ color: "black" }}>
-            <Grid item sm={12} md={4} style={{ marginTop: 50 }}>
+          {/* <Grid container style={{ color: "black" }}></Grid> */}
+          <Grid container spacing={2} style={{ color: "black" }}>
+            <Grid item sm={12} md={6}>
               <Form.Label>Sattlement</Form.Label>
               <Form.Control type="text" />
             </Grid>
-          </Grid>
-          <Grid container style={{ color: "black" }}>
-            <Grid item sm={12} md={4}>
+            <Grid item sm={12} md={6}>
               <Form.Label>Commitee</Form.Label>
               <Form.Select style={{ direction: "ltr" }} size="sm">
                 <option>Type of structure</option>
@@ -87,61 +86,65 @@ export const CaseForm1 = () => {
             </Grid>
           </Grid>
           <Grid container spacing={2}>
-            <Grid item>
+            <Grid item sm={12} md={6}>
               <Form.Label>Sattlement</Form.Label>
               <Form.Control type="text" />
             </Grid>
-            <Grid item>
+            <Grid item sm={12} md={6}>
               <Form.Label>Smooth</Form.Label>
               <Form.Control type="text" />
             </Grid>
-            <Grid item>
+          </Grid>
+          <Grid container spacing={2}>
+            <Grid item sm={12} md={6}>
               <Form.Label>Lot Number</Form.Label>
               <Form.Control type="text" />
             </Grid>
-            <Grid item>
+            <Grid item sm={12} md={6}>
               <Form.Label>Program Number</Form.Label>
               <Form.Control type="text" />
             </Grid>
           </Grid>
           <Grid container spacing={2}>
-            <Grid item>
+            <Grid item sm={12} md={6}>
               <Form.Label>Street</Form.Label>
               <Form.Control type="text" />
             </Grid>
-            <Grid item>
+            <Grid item sm={12} md={6}>
               <Form.Label>House Number</Form.Label>
               <Form.Control type="text" />
             </Grid>
           </Grid>
-          <Grid container>
-            <Grid item sm={12} md={4}>
+          <Grid container spacing={2}>
+            <Grid item sm={12} md={6}>
               <Form.Label>A number of licence available</Form.Label>
               <Form.Control type="text" />
             </Grid>
-          </Grid>
-          <Grid container md={6} spacing={2}>
-            <Grid item>
+            <Grid item sm={12} md={6}>
               <Form.Label>Application Name</Form.Label>
               <Form.Control type="text" />
             </Grid>
-            <Grid item>
-              <Form.Label>Talephone Application</Form.Label>
-              <Form.Control type="text" />
-            </Grid>
-          </Grid>
-          <Grid container spacing={2}>
-            <Grid item>
-              <Form.Label>There the skeleton plan</Form.Label>
-              <Form.Control type="text" />
-            </Grid>
-            <Grid item>
+            <Grid item></Grid>
+            <Grid container spacing={2}>
+              <Grid item sm={12} md={6}>
+                <Form.Label>Talephone Application</Form.Label>
+                <Form.Control type="text" />
+              </Grid>
+              <Grid item sm={12} md={6}>
               <Form.Label>Skeleton plane phone</Form.Label>
               <Form.Control type="text" />
             </Grid>
+            </Grid>
           </Grid>
           <Grid container spacing={2}>
-            <Grid item>
+            <Grid item sm={12} md={12}>
+              <Form.Label>There the skeleton plan</Form.Label>
+              <Form.Control type="text" />
+            </Grid>
+           
+          </Grid>
+          <Grid container spacing={2}>
+            <Grid item sm={12} md={12}>
               <Typography variant="body2">There the skeleton plan</Typography>
               <Form.Control
                 as="textarea"
@@ -153,13 +156,11 @@ export const CaseForm1 = () => {
                   border: "1px solid black",
                   outline: "none",
                   padding: "10px",
-                //   color: "white",
-                  
+                  //   color: "white",
                 }}
               />
             </Grid>
           </Grid>
-          {/* <Button variant="contained" style={{ marginTop: 20, backgroundColor: '#ffc478' }}>Continue</Button> */}
         </div>
       </Grid>
     </Container>

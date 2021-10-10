@@ -8,20 +8,17 @@ export const CaseForm2 = ({ display }) => {
     <Container style={{ display: display === false ? "none" : "block" }}>
       <Grid container justifyContent="center" style={{ marginTop: 20 }}>
         <div className="case__form">
-          {/* <Grid container> */}
-
-          <Grid item sm={12} md={4}>
-            <Form.Label>User of Structure</Form.Label>
-            <Form.Select style={{direction:"ltr"}} size="sm">
-              <option>Type of structure</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </Form.Select>
-          </Grid>
-
           <Grid container spacing={2}>
-            <Grid item sm={12} md={4}>
+            <Grid item sm={12} md={6}>
+              <Form.Label>User of Structure</Form.Label>
+              <Form.Select style={{ direction: "ltr" }} size="sm">
+                <option>Type of structure</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </Form.Select>
+            </Grid>
+            <Grid item sm={12} md={6}>
               <Form.Label>Number of basement floor</Form.Label>
               <Form.Select style={{ direction: "ltr" }} size="sm">
                 <option>Type of structure</option>
@@ -30,7 +27,10 @@ export const CaseForm2 = ({ display }) => {
                 <option>3</option>
               </Form.Select>
             </Grid>
-            <Grid item sm={12} md={4}>
+          </Grid>
+
+          <Grid container spacing={2}>
+            <Grid item sm={12} md={6}>
               <Form.Label>Total floor(including basement)</Form.Label>
               <Form.Select style={{ direction: "ltr" }} size="sm">
                 <option>Type of structure</option>
@@ -39,15 +39,15 @@ export const CaseForm2 = ({ display }) => {
                 <option>3</option>
               </Form.Select>
             </Grid>
-          </Grid>
-          <Grid item sm={12} md={4}>
-            <Form.Label>User of structure</Form.Label>
+            <Grid item sm={12} md={6}>
+              <Form.Label>User of structure</Form.Label>
               <Form.Select style={{ direction: "ltr" }} size="sm">
                 <option>Type of structure</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
               </Form.Select>
+            </Grid>
           </Grid>
         </div>
       </Grid>
