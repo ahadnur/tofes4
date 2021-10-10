@@ -76,33 +76,13 @@ export const CaseForm3 = ({ display }) => {
             spacing={2}
             style={{ margin: "20px 0", color: "black" }}
           >
-            <Grid item md={12}>
+            <Grid item sm={12} md={6}>
               <Form.Group controlId="formFileSm" className="mb-3">
                 <Form.Label>Additional files (permission)</Form.Label>
                 <Form.Control type="file" size="sm" />
               </Form.Group>
             </Grid>
-            
           </Grid>
-         
-          
-          
-          {/* <Grid container spacing={2} style={{ margin: "20px 0", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                        <Grid item md={6}>
-                            <Typography variant="body2">Additional files (permission)</Typography>
-                            <input type="text" style={{padding: "5px", backgroundColor: 'transparent', border: '1px solid white', outline: 'none', color: 'white'}} />
-                        </Grid>
-                        <Grid item md={6} style={{ margin: "20px 0" }}>
-                            <input type="file" />
-                        </Grid>
-                    </Grid>  */}
-
-          {/* <Button variant="contained" style={{ marginTop: 20, marginLeft: 20, backgroundColor:'#ffc478' }}>Add File</Button>
-
-                    <div style={{float: 'left'}}>
-                        <Button variant="contained" style={{ marginTop: 20, marginLeft: 20, backgroundColor:'#ffc478' }}>Return</Button>
-                        <Button variant="contained" style={{ marginTop: 20, marginLeft: 20, backgroundColor:'#ffc478' }}>Open a new file</Button>
-                    </div> */}
         </div>
       </Grid>
     </Container>
